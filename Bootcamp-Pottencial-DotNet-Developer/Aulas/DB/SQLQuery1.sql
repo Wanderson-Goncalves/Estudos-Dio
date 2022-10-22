@@ -1,17 +1,3 @@
-SELECT 
-	Nome,
-	Preco,
-	dbo.CalcularDesconto(Preco, 60) PrecoComDesconto
-From Produtos WHERE TAmanho = 'M'
-
-
-
-CREATE FUNCTION CalcularDesconto(@Preco DECIMAL(13, 2), @Porcentagem INT)
-RETURNS DECIMAL(13, 2)
-
-BEGIN
-	RETURN	@Preco - @Preco / 100 * @Porcentagem
-END
 
 
 
@@ -20,13 +6,13 @@ END
 
 
 
-
-
-
-
-
-
-
+CREATE TABLE [dbo].[Produtos] (
+    [Id] INT IDENTITY(1,1) NOT NULL,
+    [Nome] NVARCHAR(MAX),
+    [Categoria] NVARCHAR(MAX),
+    [Preco] FLOAT (53),
+    CONSTRAINT [PK_Produtos] PRIMARY KEY ([Id])
+);
 
 
 
