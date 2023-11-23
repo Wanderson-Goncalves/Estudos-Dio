@@ -1,7 +1,5 @@
 # Análise de Dados sobre a COVID-19
 
-# Análise de Dados sobre a COVID-19
-
 Este é um notebook Jupyter (`.ipynb`) que contém uma análise exploratória de dados sobre a COVID-19 usando a linguagem de programação Python. O código aborda diversas etapas, desde a importação dos dados até a visualização de informações relevantes. O conjunto de dados utilizado está disponível em [https://github.com/neylsoncrepalde/projeto_eda_covid/blob/master/covid_19_data.csv](https://github.com/neylsoncrepalde/projeto_eda_covid/blob/master/covid_19_data.csv?raw=true).
 
 ## Pré-requisitos
